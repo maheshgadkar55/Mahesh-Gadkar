@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahesh Gadkar – IT Service Delivery & Desktop Support (L2)</title>
+<meta name="description" content="Portfolio of Mahesh Gadkar, Desktop Support Engineer (L2) in Pune with 5+ years in end-user support, industrial PC setup, ServiceNow and IT asset management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#EDF0F2; --surface:#FFFFFF; --ink:#16212B; --muted:#52606D; --line:#CBD3DA;
+  --accent:#0B6E63; --accent-ink:#FFFFFF; --warn:#9A5B00; --soft:#DCEBE8;
+  --head:'Familjen Grotesk','Segoe UI',Arial,sans-serif; --body:'Public Sans','Segoe UI',Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10171D; --surface:#18222B; --ink:#E7EDF2; --muted:#9AA9B6; --line:#2B3A46;
+    --accent:#4FC3B3; --accent-ink:#06201C; --warn:#E5A84B; --soft:#173532; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10171D; --surface:#18222B; --ink:#E7EDF2; --muted:#9AA9B6; --line:#2B3A46;
+  --accent:#4FC3B3; --accent-ink:#06201C; --warn:#E5A84B; --soft:#173532; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;justify-content:space-between;align-items:center;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+nav .links{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+nav .brand{font-family:var(--head);font-weight:700;font-size:1.05rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,3.4vw,2.1rem);font-weight:700;margin-bottom:1.5rem}
+h3{font-size:1.2rem;font-weight:700}
+section{padding:3.5rem 0 0}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:2.5rem;align-items:center;padding:3.5rem 0 0}
+.hero .role{font-size:1.2rem;color:var(--muted);margin:1rem 0 1.5rem;max-width:34ch}
+.hero p.lead{max-width:52ch;margin:0 0 1.75rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent);background:transparent}
+.ticket{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--accent);border-radius:4px;padding:1.25rem 1.4rem;font-size:.93rem}
+.ticket header{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin-bottom:.9rem;font-weight:600}
+.badge{background:var(--soft);color:var(--accent);padding:.15rem .6rem;border-radius:99px;font-size:.82rem;font-weight:600}
+.ticket dl{margin:0;display:grid;grid-template-columns:7.5rem 1fr;gap:.55rem 1rem}
+.ticket dt{color:var(--muted)}
+.ticket dd{margin:0;font-weight:500}
+.ticket hr{border:0;border-top:1px dashed var(--line);margin:.9rem 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:3rem}
+.stats div{background:var(--surface);padding:1rem 1.2rem}
+.stats b{display:block;font-family:var(--head);font-size:1.5rem}
+.stats span{color:var(--muted);font-size:.9rem}
+.about{max-width:68ch}
+.about p{margin:0 0 1rem}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 2rem 1.6rem}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.45rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.timeline li.now::before{background:var(--accent)}
+.meta{color:var(--muted);font-size:.92rem;margin:.2rem 0 .8rem}
+.timeline ul{margin:0;padding-left:1.1rem;max-width:78ch}
+.timeline ul li{padding:0 0 .4rem;border:0;position:static}
+.timeline ul li::before{display:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:1.2rem 1.3rem}
+.card h3{font-size:1.05rem;margin-bottom:.6rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
+.tags li{background:var(--bg);border:1px solid var(--line);padding:.15rem .6rem;border-radius:4px;font-size:.88rem}
+.card p{margin:0 0 .75rem}
+.status{color:var(--warn);font-weight:600;font-size:.9rem}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.list{margin:0;padding-left:1.1rem}
+.list li{margin-bottom:.4rem}
+.contact{background:var(--accent);color:var(--accent-ink);border-radius:6px;padding:2rem clamp(1.2rem,4vw,2.5rem);margin-top:3.5rem}
+.contact h2{margin-bottom:.6rem}
+.contact p{margin:0 0 1.2rem;max-width:50ch}
+.contact a{color:var(--accent-ink);font-weight:600}
+.contact .row{display:flex;flex-wrap:wrap;gap:.5rem 2rem}
+footer{padding:2rem 0 2.5rem;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.ticket dl{grid-template-columns:6.5rem 1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Primary">
+    <span class="brand">Mahesh Gadkar</span>
+    <div class="links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#project">Project</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Mahesh Keshav Gadkar</h1>
+      <p class="role">Desktop Support Engineer (L2) for IT service delivery and infrastructure support, based in Pune.</p>
+      <p class="lead">I keep desktops, industrial PCs and shop-floor systems ready to work, and I keep the tickets and asset records behind them accurate.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:maheshgadkar55@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://linkedin.com/in/mahesh-gadkar-1ab021386" rel="noopener">View LinkedIn</a>
+      </div>
+    </div>
+    <aside class="ticket" aria-label="Current assignment">
+      <header><span>Current assignment</span><span class="badge">Active</span></header>
+      <dl>
+        <dt>Client site</dt><dd>Cummins India, Pune</dd>
+        <dt>Employer</dt><dd>Digitide Solutions Limited</dd>
+        <dt>Role</dt><dd>Desktop Support Engineer (L2)</dd>
+        <dt>Since</dt><dd>Jul 2026</dd>
+      </dl>
+      <hr>
+      <dl>
+        <dt>Handles</dt><dd>Incidents, service requests, endpoint setup, asset verification</dd>
+        <dt>Tools</dt><dd>ServiceNow, Tanium, VNC, Zebra MC3300</dd>
+      </dl>
+    </aside>
+  </header>
+
+  <div class="stats">
+    <div><b>5+ years</b><span>IT support experience</span></div>
+    <div><b>L2</b><span>Current support level</span></div>
+    <div><b>3</b><span>Support roles held</span></div>
+    <div><b>Pune</b><span>Onsite, India</span></div>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about">
+      <p>I work across end-user support, endpoint and industrial PC operations, incident handling and IT asset management. At Cummins India in Pune, I prepare Windows endpoints and industrial PCs for operational use and support the people who depend on them.</p>
+      <p>I like work that is traceable: a ticket with clear notes, an asset matched to its serial number and location, a system checked before it goes live. I am familiar with ITIL concepts and root cause analysis, and I am studying toward ITIL Foundation and CompTIA A+.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li class="now">
+        <h3>Desktop Support Engineer (L2)</h3>
+        <p class="meta">Cummins India, through Digitide Solutions Limited · Pune · Jul 2026 – Present</p>
+        <ul>
+          <li>Deliver onsite desktop and end-user support across the Pune site, including shop-floor and industrial IT systems.</li>
+          <li>Prepare Windows 10 desktops, laptops and industrial PCs: OS installation, reinstallation and setup for operational readiness.</li>
+          <li>Configure and support PPC3181, Industrial Computer 510, Advantech Industrial PCs and Dell OptiPlex systems.</li>
+          <li>Set BIOS and Auto Power-On options, assign hostnames, join domains and give basic Active Directory support.</li>
+          <li>Install and configure Tanium, CS Setup and VNC, and remove SCCM when required.</li>
+          <li>Troubleshoot hardware, Windows, software, file-share and basic network issues, including laptop keyboard, screen and motherboard replacement.</li>
+          <li>Handle ServiceNow incidents and service requests from investigation to documented closure.</li>
+          <li>Verify physical assets with a Zebra MC3300 barcode scanner, matching serial numbers to system name and location or pillar records, and keep the Excel records traceable.</li>
+          <li>Run bulk system preparation, deployment and readiness checks.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Desktop Support Engineer (L1)</h3>
+        <p class="meta">Cybaem Tech · Pune · Mar 2026 – Jul 2026</p>
+        <ul>
+          <li>Gave onsite support for desktops, laptops, printers and peripherals.</li>
+          <li>Installed and maintained Windows 10/11, Microsoft Office, Microsoft 365, drivers and enterprise software.</li>
+          <li>Diagnosed hardware, software, printer, VPN and network issues to restore user productivity.</li>
+          <li>Handled password resets, user accounts, BIOS settings and Windows Backup and Restore.</li>
+          <li>Supported users remotely with AnyDesk, TeamViewer and RDP, and ran preventive maintenance and hardware diagnostics.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Technical Support Executive (IT Service Desk)</h3>
+        <p class="meta">CSC (Government Service Center) · Shrirampur · Sep 2019 – Dec 2025</p>
+        <ul>
+          <li>Provided first-level support for desktops, laptops, printers, scanners and Windows systems.</li>
+          <li>Installed and maintained Windows, Microsoft Office, browsers, antivirus software and business applications.</li>
+          <li>Resolved hardware, software, printer, LAN, Wi-Fi and internet issues to keep daily operations running.</li>
+          <li>Guided users through technical fixes, system configuration and digital government service applications.</li>
+          <li>Ran Windows updates, preventive maintenance and routine system health checks.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Service management</h3><ul class="tags"><li>ServiceNow</li><li>Incident management</li><li>Service requests</li><li>ITIL concepts</li><li>Root cause analysis</li><li>Ticket documentation</li><li>Jira (basic)</li></ul></div>
+      <div class="card"><h3>Endpoint and industrial IT</h3><ul class="tags"><li>Desktop and laptop support</li><li>PPC3181</li><li>Industrial Computer 510</li><li>Advantech PCs</li><li>Dell OptiPlex</li><li>Windows install and deployment</li></ul></div>
+      <div class="card"><h3>Asset and inventory</h3><ul class="tags"><li>Physical asset verification</li><li>Zebra MC3300 scanning</li><li>Serial number tracking</li><li>Location records</li><li>Excel tracking</li></ul></div>
+      <div class="card"><h3>Windows and Microsoft</h3><ul class="tags"><li>Windows 10/11</li><li>Microsoft 365</li><li>Outlook</li><li>Active Directory (basic)</li><li>SCCM (basic)</li><li>BIOS and Auto Power-On</li><li>Domain joining</li></ul></div>
+      <div class="card"><h3>Tools and remote support</h3><ul class="tags"><li>Tanium</li><li>CS Setup</li><li>VNC</li><li>AnyDesk</li><li>TeamViewer</li><li>RDP</li></ul></div>
+      <div class="card"><h3>Networking and systems</h3><ul class="tags"><li>LAN and Wi-Fi</li><li>TCP/IP</li><li>DNS</li><li>DHCP</li><li>Linux</li><li>Unix</li><li>macOS</li><li>Android</li></ul></div>
+    </div>
+  </section>
+
+  <section id="project">
+    <h2>Project</h2>
+    <div class="card">
+      <h3>AutoHost: asset registration and hostname workflow</h3>
+      <p class="status">In progress</p>
+      <p>An internal prototype that registers assets by serial number and generates a standard hostname, with selectable options or manual entry and a live preview of the generated name.</p>
+      <p>Planned scope: cloud-based stock visibility, periodic inventory checks (every 15 days or monthly), online updates by stock verifiers, central access for India leadership, and Windows LAPS integration through Active Directory and Group Policy.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education and certifications</h2>
+    <div class="two">
+      <div class="card">
+        <h3>Education</h3>
+        <ul class="list">
+          <li><b>Master of Arts, Economics</b><br>R.B.N.B. College, Shrirampur · 2025 – Present</li>
+          <li><b>Bachelor of Arts, Economics</b><br>A.C.S. College, Ashoknagar · 2018 – 2021 · 70.83%</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul class="list">
+          <li>Salesforce Certified: Agentforce Specialist</li>
+          <li>CSC Village Level Entrepreneur Certificate</li>
+          <li>MS-CIT Certificate and NCC A Certificate</li>
+          <li>ITIL Foundation (in progress)</li>
+          <li>CompTIA A+ (in progress)</li>
+          <li>Microsoft Office Specialist and Google Workspace (planned)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Let’s talk</h2>
+      <p>I am open to IT service delivery, infrastructure support and L2 desktop support roles.</p>
+      <div class="row">
+        <a href="mailto:maheshgadkar55@gmail.com">maheshgadkar55@gmail.com</a>
+        <a href="https://linkedin.com/in/mahesh-gadkar-1ab021386" rel="noopener">linkedin.com/in/mahesh-gadkar-1ab021386</a>
+        <span>Pune, India</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>© Mahesh Keshav Gadkar</footer>
+</div>
+</body>
+</html>
